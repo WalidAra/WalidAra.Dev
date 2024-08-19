@@ -13,6 +13,7 @@ type Project = {
     url: string;
   }[];
   bg?: string;
+  delay: number;
 };
 
 const MyProjects = () => {
@@ -42,6 +43,7 @@ const MyProjects = () => {
         },
       ],
       bg: "bg-gradient-to-r to-indigo-400 from-indigo-700",
+      delay: 0.2,
     },
     {
       url: "https://github.com/WalidAra/data-view-pro-app",
@@ -67,6 +69,7 @@ const MyProjects = () => {
         },
       ],
       bg: "bg-gradient-to-r from-pink-500 to-orange-500",
+      delay: 0.23,
     },
     {
       url: "https://github.com/WalidAra/sync-chat",
@@ -93,6 +96,7 @@ const MyProjects = () => {
         },
       ],
       bg: "bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%",
+      delay: 0.24,
     },
     {
       url: "https://github.com/WalidAra/Fortress-pass-manager",
@@ -119,6 +123,7 @@ const MyProjects = () => {
         },
       ],
       bg: "bg-gradient-to-r from-slate-500 to-slate-400",
+      delay: 0.25,
     },
   ];
 
@@ -139,7 +144,7 @@ const MyProjects = () => {
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] p-2 mx-auto">
         {projects.map((project) => (
-          <ProjectCard key={project.name} project={project} />
+          <ProjectCard  key={project.name} project={project} />
         ))}
       </div>
     </section>

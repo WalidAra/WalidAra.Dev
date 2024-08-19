@@ -1,5 +1,7 @@
 import AboutMe from "./components/template/about";
+import Contact from "./components/template/contact";
 import Education from "./components/template/education";
+import Hakathons from "./components/template/hakathons";
 import Hero from "./components/template/hero";
 import MyProjects from "./components/template/projects";
 import Skills from "./components/template/skills";
@@ -15,6 +17,8 @@ function App() {
           <Education />
           <Skills />
           <MyProjects />
+          <Hakathons />
+          <Contact />
         </main>
       </TracingBeam>
     </div>

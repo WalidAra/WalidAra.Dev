@@ -100,7 +100,7 @@ const Skills = () => {
     <section className="w-full my-10">
       <div className="flex w-full flex-col gap-3">
         <h2 className="text-2xl font-bold">My Skills</h2>
-        <div className="w-full flex flex-wrap gap-4">
+        <div className="w-full flex justify-center flex-wrap gap-4">
           <TooltipProvider delayDuration={1} >
             {mySkills.map((skill) => (
               <Tooltip>
