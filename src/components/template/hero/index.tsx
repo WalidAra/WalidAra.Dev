@@ -1,4 +1,3 @@
-
 import ShimmerButton from "@/components/magicui/shimmer-button";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
@@ -10,6 +9,7 @@ const Hero = () => {
 
         <div className="flex flex-col space-y-6 justify-center items-center">
           <TextGenerateEffect
+            duration={0.5}
             className="text-4xl sm:text-7xl text-center font-bold"
             words={"Hi, I'm Walid 👋, a software engineer"}
           />

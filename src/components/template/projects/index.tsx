@@ -1,6 +1,127 @@
-import React from 'react'
+import ProjectCard from "./components/ProjectCard";
+import { FaGithub } from "react-icons/fa";
+
+type Project = {
+  url: string;
+  name: string;
+  date: string;
+  description: string;
+  technologies: string[];
+  links: {
+    name: string;
+    icon: React.ReactNode;
+    url: string;
+  }[];
+  bg?: string;
+};
 
 const MyProjects = () => {
+  const projects: Project[] = [
+    {
+      url: "",
+      name: "LearnTok",
+      date: "June 2023 - June 2024",
+      description:
+        "I built an educational platform inspired by TikTok, focusing on user engagement. Using GPT-3.5, I created an asynchronous task to detect hate speech and implemented a recommendation system to tailor content based on user preferences.",
+      technologies: [
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+        "https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png",
+        "https://cdn.worldvectorlogo.com/logos/prisma-3.svg",
+      ],
+      links: [
+        {
+          name: "Source",
+          icon: <FaGithub />,
+          url: "https://github.com/WalidAra/LearnTok",
+        },
+      ],
+      bg: "bg-gradient-to-r to-indigo-400 from-indigo-700",
+    },
+    {
+      url: "https://github.com/WalidAra/data-view-pro-app",
+      name: "Data view pro",
+      date: "June 2024 - July 2024",
+      description:
+        "I developed a web app that displays metadata from MySQL, PostgreSQL, and MongoDB databases. It features secure user authentication, encrypted storage for connection strings, and a user-friendly interface for accessing and modifying database data.",
+      technologies: [
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+        "https://cdn.worldvectorlogo.com/logos/prisma-3.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+      ],
+      links: [
+        {
+          name: "Source",
+          icon: <FaGithub />,
+          url: "https://github.com/WalidAra/data-view-pro-app",
+        },
+      ],
+      bg: "bg-gradient-to-r from-pink-500 to-orange-500",
+    },
+    {
+      url: "https://github.com/WalidAra/sync-chat",
+      name: "Sync chat",
+      date: "June 2024 - August 2024",
+      description:
+        "I built a real-time chat app with instant messaging for private and group chats. Using Socket.io, I integrated real-time communication and collaborated with a teammate to design responsive, high-performance features.",
+      technologies: [
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+        "https://cdn.worldvectorlogo.com/logos/prisma-3.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+      ],
+      links: [
+        {
+          name: "Source",
+          icon: <FaGithub />,
+          url: "https://github.com/WalidAra/sync-chat",
+        },
+      ],
+      bg: "bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%",
+    },
+    {
+      url: "https://github.com/WalidAra/Fortress-pass-manager",
+      name: "Fortress pass manager",
+      date: "August 2024 - August 2024",
+      description:
+        "I designed a mobile app for secure password management, using AES-256 encryption for data protection and following best practices for secure storage of user credentials.",
+      technologies: [
+        "https://cdn.icon-icons.com/icons2/2389/PNG/512/expo_logo_icon_145293.png",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+        "https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png",
+        "https://cdn.worldvectorlogo.com/logos/prisma-3.svg",
+      ],
+      links: [
+        {
+          name: "Source",
+          icon: <FaGithub />,
+          url: "https://github.com/WalidAra/Fortress-pass-manager",
+        },
+      ],
+      bg: "bg-gradient-to-r from-slate-500 to-slate-400",
+    },
+  ];
+
   return (
     <section className="w-full py-6 flex flex-col gap-6">
       <div className="space-y-2 w-full text-center m-auto">
@@ -16,11 +137,13 @@ const MyProjects = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-        
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] p-2 mx-auto">
+        {projects.map((project) => (
+          <ProjectCard key={project.name} project={project} />
+        ))}
       </div>
     </section>
   );
-}
+};
 
-export default MyProjects
+export default MyProjects;

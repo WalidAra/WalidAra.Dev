@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Tooltip,
   TooltipContent,
@@ -13,8 +12,8 @@ const Skills = () => {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     },
     {
-      name: "React Native",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      name: "Expo",
+      icon: "https://cdn.icon-icons.com/icons2/2389/PNG/512/expo_logo_icon_145293.png",
     },
     {
       name: "Next.js",
