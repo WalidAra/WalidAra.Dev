@@ -2,6 +2,7 @@ import ProjectCard from "./components/ProjectCard";
 import { FaGithub } from "react-icons/fa";
 import LearnTok from '@/assets/profile.png'
 import DataViewPro from '@/assets/Screenshot from 2024-08-20 15-45-42.png'
+import FortressPassManager from '@/assets/design.png'
 
 type Project = {
   url: string;
@@ -16,6 +17,7 @@ type Project = {
   }[];
   bg?: string;
   delay: number;
+  object:string
 };
 
 const MyProjects = () => {
@@ -46,6 +48,7 @@ const MyProjects = () => {
       ],
       bg: "bg-gradient-to-r to-indigo-400 from-indigo-700",
       delay: 0.2,
+      object: "object-fill",
     },
     {
       url: DataViewPro,
@@ -72,6 +75,7 @@ const MyProjects = () => {
       ],
       bg: "bg-gradient-to-r from-pink-500 to-orange-500",
       delay: 0.23,
+      object: "object-fill",
     },
     {
       url: "https://github.com/WalidAra/sync-chat",
@@ -97,11 +101,12 @@ const MyProjects = () => {
           url: "https://github.com/WalidAra/sync-chat",
         },
       ],
-      bg: "bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%",
+      bg: "bg-custom-radial",
       delay: 0.24,
+      object: "object-cover",
     },
     {
-      url: "https://github.com/WalidAra/Fortress-pass-manager",
+      url: FortressPassManager,
       name: "Fortress pass manager",
       date: "August 2024 - August 2024",
       description:
@@ -124,8 +129,9 @@ const MyProjects = () => {
           url: "https://github.com/WalidAra/Fortress-pass-manager",
         },
       ],
-      bg: "bg-gradient-to-r from-slate-500 to-slate-400",
+      bg: "bg-gradient-to-r from-amber-400 to-orange-500",
       delay: 0.25,
+      object: "object-cover",
     },
   ];
 

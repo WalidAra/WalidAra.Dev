@@ -22,6 +22,7 @@ type Project = {
   }[];
   bg?: string;
   delay: number;
+  object: string;
 };
 
 type Props = {
@@ -38,6 +39,7 @@ const ProjectCard = ({
     url,
     bg = "bg-secondary",
     delay,
+    object
   },
 }: Props) => {
   return (
@@ -53,7 +55,7 @@ const ProjectCard = ({
             alt={name}
             width={500}
             height={300}
-            className="h-40 w-full overflow-hidden object-fill object-top"
+            className={`h-40 w-full overflow-hidden ${object} object-top`}
           />
         </div>
         <CardHeader className="px-2 p-2">

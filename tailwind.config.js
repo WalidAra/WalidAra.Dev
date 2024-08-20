@@ -115,6 +115,10 @@ module.exports = {
           },
         },
       },
+      backgroundImage: {
+        "custom-radial":
+          "radial-gradient(circle at 10% 20%, rgb(0, 102, 161) 0%, rgb(0, 68, 108) 90.1%);",
+      },
     },
   },
   plugins: [
