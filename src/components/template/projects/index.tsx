@@ -1,5 +1,7 @@
 import ProjectCard from "./components/ProjectCard";
 import { FaGithub } from "react-icons/fa";
+import LearnTok from '@/assets/profile.png'
+import DataViewPro from '@/assets/Screenshot from 2024-08-20 15-45-42.png'
 
 type Project = {
   url: string;
@@ -19,7 +21,7 @@ type Project = {
 const MyProjects = () => {
   const projects: Project[] = [
     {
-      url: "",
+      url: LearnTok,
       name: "LearnTok",
       date: "June 2023 - June 2024",
       description:
@@ -46,7 +48,7 @@ const MyProjects = () => {
       delay: 0.2,
     },
     {
-      url: "https://github.com/WalidAra/data-view-pro-app",
+      url: DataViewPro,
       name: "Data view pro",
       date: "June 2024 - July 2024",
       description:

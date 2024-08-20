@@ -47,13 +47,13 @@ const ProjectCard = ({
           "flex flex-col  overflow-hidden  max-w-80  border hover:shadow-lg transition-all duration-300 ease-out h-full"
         }
       >
-        <div className={`p-2 ${bg}`}>
+        <div className={`px-4 pt-4 ${bg}`}>
           <img
             src={url}
             alt={name}
             width={500}
             height={300}
-            className="h-40 w-full overflow-hidden object-cover object-top"
+            className="h-40 w-full overflow-hidden object-fill object-top"
           />
         </div>
         <CardHeader className="px-2 p-2">
