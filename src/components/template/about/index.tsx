@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <section className="w-full my-10">
+    <section id="about" className="w-full my-10">
       <div className="flex w-full flex-col gap-2">
         <h2 className="text-2xl font-bold">About Me</h2>
 

@@ -128,7 +128,7 @@ const MyProjects = () => {
   ];
 
   return (
-    <section className="w-full py-6 flex flex-col gap-6">
+    <section id="projects" className="w-full py-6 flex flex-col gap-6">
       <div className="space-y-2 w-full text-center m-auto">
         <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
           My Projects

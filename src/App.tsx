@@ -1,3 +1,5 @@
+import { DockNav } from "./components/container/DockNav";
+import NavBar from "./components/container/NavBar";
 import AboutMe from "./components/template/about";
 import Contact from "./components/template/contact";
 import Education from "./components/template/education";
@@ -10,6 +12,8 @@ import { TracingBeam } from "./components/ui/tracer";
 function App() {
   return (
     <div className="w-full min-h-screen relative">
+      <NavBar />
+
       <TracingBeam className=" p-10 m-auto">
         <main className="w-full">
           <Hero />
@@ -21,6 +25,7 @@ function App() {
           <Contact />
         </main>
       </TracingBeam>
+      <DockNav />
     </div>
   );
 }

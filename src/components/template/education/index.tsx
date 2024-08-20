@@ -3,9 +3,9 @@ import UHBCLogo from "@/assets/uhbc-logo.jpg";
 
 const Education = () => {
   return (
-    <section className="w-full my-10">
+    <section id="education" className="w-full my-10">
       <div className="flex w-full flex-col gap-2">
-        <h2 className="text-2xl font-bold">About Me</h2>
+        <h2 className="text-2xl font-bold">Education</h2>
         <div>
           <ResumeCard
             key={"Hassiba Ben Bouali University"}
