@@ -16,7 +16,10 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export function DockNav() {
   return (
-    <nav className="sticky bottom-5 w-full flex items-center justify-center" aria-label="Social media links">
+    <nav
+      className="sticky bottom-5 w-full flex items-center justify-center"
+      aria-label="Social media links"
+    >
       <div className="relative">
         <TooltipProvider delayDuration={2}>
           <Dock direction="middle">
@@ -28,7 +31,7 @@ export function DockNav() {
                 aria-label="LinkedIn profile"
               >
                 <Tooltip>
-                  <TooltipTrigger>
+                  <TooltipTrigger aria-label="LinkedIn profile button">
                     <FaLinkedin className="size-5" aria-hidden="true" />
                   </TooltipTrigger>
                   <TooltipContent className="py-1 px-2 text-xs bg-foreground text-white">
@@ -45,7 +48,7 @@ export function DockNav() {
                 aria-label="GitHub profile"
               >
                 <Tooltip>
-                  <TooltipTrigger>
+                  <TooltipTrigger aria-label="GitHub profile button">
                     <FaGithub className="size-5" aria-hidden="true" />
                   </TooltipTrigger>
                   <TooltipContent className="py-1 px-2 text-xs bg-foreground text-white">
@@ -55,12 +58,9 @@ export function DockNav() {
               </a>
             </DockIcon>
             <DockIcon>
-              <a
-                href="mailto:arawalid90@example.com"
-                aria-label="Send email"
-              >
+              <a href="mailto:arawalid90@example.com" aria-label="Send email">
                 <Tooltip>
-                  <TooltipTrigger>
+                  <TooltipTrigger aria-label="Email message button">
                     <HiOutlineMail className="size-5" aria-hidden="true" />
                   </TooltipTrigger>
                   <TooltipContent className="py-1 px-2 text-xs bg-foreground text-white">
@@ -77,7 +77,7 @@ export function DockNav() {
                 aria-label="Discord profile"
               >
                 <Tooltip>
-                  <TooltipTrigger>
+                  <TooltipTrigger aria-label="Discord profile button">
                     <FaDiscord className="size-5" aria-hidden="true" />
                   </TooltipTrigger>
                   <TooltipContent className="py-1 px-2 text-xs bg-foreground text-white">
