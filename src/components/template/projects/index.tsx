@@ -1,9 +1,9 @@
 import ProjectCard from "./components/ProjectCard";
 import { FaGithub } from "react-icons/fa";
-import LearnTok from '@/assets/profile.png'
-import DataViewPro from '@/assets/Screenshot from 2024-08-20 15-45-42.png'
-import FortressPassManager from '@/assets/design.png'
-import SyncChat from '@/assets/sync.png'
+import LearnTok from '@/assets/profile.webp'
+import DataViewPro from '@/assets/Screenshot from 2024-08-20 15-45-42.webp'
+import FortressPassManager from '@/assets/design.webp'
+import SyncChat from '@/assets/sync.webp'
 
 type Project = {
   url: string;

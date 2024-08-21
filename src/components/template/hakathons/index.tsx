@@ -3,7 +3,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/Avatar";
 const Hakathons = () => {
   const hackathons = [
     {
-      avatar: "https://github.com/shadcn.png",
+      avatar:
+        "https://i.pinimg.com/originals/58/c8/40/58c840666765cbc47737dac09b84781e.jpg",
       name: "Hackathon Lagouat",
       description:
         "Joined a 24-hour coding challenge, rapidly prototyping solutions with fellow developers and expanding my network.",
@@ -44,7 +45,7 @@ const Hakathons = () => {
           >
             <div className="w-full flex items-start gap-2 p-4 border-x border-border border-t">
               <div>
-                <Avatar>
+                <Avatar className="border-foreground border" >
                   <AvatarImage src={hackathon.avatar} alt={hackathon.name} />
                   <AvatarFallback>
                     {hackathon.name.split(" ")[0]}

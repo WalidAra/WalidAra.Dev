@@ -14,8 +14,8 @@ function App() {
     <div className="w-full  min-h-screen relative">
       <NavBar />
 
-      <TracingBeam className=" sm:p-10  m-auto">
-        <main className="w-full">
+      <TracingBeam className="m-auto">
+        <main className="w-full sm:p-10">
           <Hero />
           <AboutMe />
           <Education />

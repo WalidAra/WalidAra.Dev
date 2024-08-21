@@ -16,56 +16,71 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export function DockNav() {
   return (
-    <div className="sticky bottom-5 w-full flex items-center justify-center">
-      <div className="relative ">
+    <nav className="sticky bottom-5 w-full flex items-center justify-center" aria-label="Social media links">
+      <div className="relative">
         <TooltipProvider delayDuration={2}>
           <Dock direction="middle">
             <DockIcon>
               <a
                 href="https://www.linkedin.com/in/walid-araar-676a37280/"
                 target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
               >
                 <Tooltip>
                   <TooltipTrigger>
-                    <FaLinkedin className="size-5" />
+                    <FaLinkedin className="size-5" aria-hidden="true" />
                   </TooltipTrigger>
-                  <TooltipContent className=" py-1 px-2 text-xs bg-foreground text-white">
+                  <TooltipContent className="py-1 px-2 text-xs bg-foreground text-white">
                     LinkedIn
                   </TooltipContent>
                 </Tooltip>
               </a>
             </DockIcon>
             <DockIcon>
-              <a href="https://github.com/WalidAra" target="_blank">
+              <a
+                href="https://github.com/WalidAra"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile"
+              >
                 <Tooltip>
                   <TooltipTrigger>
-                    <FaGithub className="size-5" />
+                    <FaGithub className="size-5" aria-hidden="true" />
                   </TooltipTrigger>
-                  <TooltipContent className=" py-1 px-2 text-xs bg-foreground text-white">
+                  <TooltipContent className="py-1 px-2 text-xs bg-foreground text-white">
                     Github
                   </TooltipContent>
                 </Tooltip>
               </a>
             </DockIcon>
             <DockIcon>
-              <a href="mailto:arawalid90@example.com">
+              <a
+                href="mailto:arawalid90@example.com"
+                aria-label="Send email"
+              >
                 <Tooltip>
                   <TooltipTrigger>
-                    <HiOutlineMail className="size-5" />
+                    <HiOutlineMail className="size-5" aria-hidden="true" />
                   </TooltipTrigger>
-                  <TooltipContent className=" py-1 px-2 text-xs bg-foreground text-white">
+                  <TooltipContent className="py-1 px-2 text-xs bg-foreground text-white">
                     Email
                   </TooltipContent>
                 </Tooltip>
               </a>
             </DockIcon>
             <DockIcon>
-              <a href="https://discord.com/users/1069678365159735340">
+              <a
+                href="https://discord.com/users/1069678365159735340"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Discord profile"
+              >
                 <Tooltip>
                   <TooltipTrigger>
-                    <FaDiscord className="size-5" />
+                    <FaDiscord className="size-5" aria-hidden="true" />
                   </TooltipTrigger>
-                  <TooltipContent className=" py-1 px-2 text-xs bg-foreground text-white">
+                  <TooltipContent className="py-1 px-2 text-xs bg-foreground text-white">
                     Discord
                   </TooltipContent>
                 </Tooltip>
@@ -74,6 +89,6 @@ export function DockNav() {
           </Dock>
         </TooltipProvider>
       </div>
-    </div>
+    </nav>
   );
 }
