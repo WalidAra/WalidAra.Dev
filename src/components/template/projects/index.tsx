@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import LearnTok from '@/assets/profile.png'
 import DataViewPro from '@/assets/Screenshot from 2024-08-20 15-45-42.png'
 import FortressPassManager from '@/assets/design.png'
+import SyncChat from '@/assets/sync.png'
 
 type Project = {
   url: string;
@@ -78,7 +79,7 @@ const MyProjects = () => {
       object: "object-fill",
     },
     {
-      url: "https://github.com/WalidAra/sync-chat",
+      url: SyncChat,
       name: "Sync chat",
       date: "June 2024 - August 2024",
       description:
@@ -129,7 +130,7 @@ const MyProjects = () => {
           url: "https://github.com/WalidAra/Fortress-pass-manager",
         },
       ],
-      bg: "bg-gradient-to-r from-amber-400 to-orange-500",
+      bg: "bg-gradient-to-r from-pink-600 to-purple-800 ",
       delay: 0.25,
       object: "object-cover",
     },

@@ -3,8 +3,8 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 const Hero = () => {
   return (
-    <section id="home" className="w-full relative">
-      <div className="h-[50rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
+    <section id="home" className="w-full h-screen relative">
+      <div className="h-[90%] w-full dark:bg-black bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
         <div className="flex flex-col space-y-6 justify-center items-center">

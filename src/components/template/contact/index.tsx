@@ -14,14 +14,12 @@ const Contact = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSent(true);
-    const name = nameRef.current?.value;
-    const email = emailRef.current?.value;
-    const message = messageRef.current?.value;
+    const name = encodeURIComponent(nameRef.current?.value || "");
+    const email = encodeURIComponent(emailRef.current?.value || "");
+    const message = encodeURIComponent(messageRef.current?.value || "");
 
-    // Handle form submission logic here
-
-    // Send email
-    const mailtoLink = `mailto:arawalid90@gmail.com?subject=Dev Talk&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+    const mailtoLink = `mailto:arawalid90@gmail.com?subject=Dev%20Talk&body=Name%3A%20${name}%0AEmail%3A%20${email}%0AMessage%3A%20${message}`;
+    
     window.location.href = mailtoLink;
 
     setIsSent(false);

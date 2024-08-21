@@ -11,10 +11,10 @@ import { TracingBeam } from "./components/ui/tracer";
 
 function App() {
   return (
-    <div className="w-full min-h-screen relative">
+    <div className="w-full  min-h-screen relative">
       <NavBar />
 
-      <TracingBeam className=" p-10 m-auto">
+      <TracingBeam className=" sm:p-10  m-auto">
         <main className="w-full">
           <Hero />
           <AboutMe />
