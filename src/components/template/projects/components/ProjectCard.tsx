@@ -1,5 +1,6 @@
 import AvatarCircles from "@/components/magicui/avatar-circles";
 import BlurFade from "@/components/magicui/blur-fade";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import {
   Card,
   CardContent,
@@ -39,7 +40,7 @@ const ProjectCard = ({
     url,
     bg = "bg-secondary",
     delay,
-    object
+    object,
   },
 }: Props) => {
   return (
@@ -50,13 +51,14 @@ const ProjectCard = ({
         }
       >
         <div className={`px-4 pt-4 ${bg}`}>
-          <img
-            src={url}
-            alt={name}
-            width={500}
-            height={300}
-            className={`h-40 w-full aspect-video overflow-hidden ${object} object-top`}
-          />
+          <AspectRatio ratio={16 / 9} >
+            <img
+              src={url}
+              alt={`Photo of ${name}`}
+              className={`h-full w-full ${object} object-top`}
+              height={300}
+            />
+          </AspectRatio>
         </div>
         <CardHeader className="px-2 p-2">
           <div className="space-y-1">
