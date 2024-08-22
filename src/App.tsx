@@ -15,7 +15,7 @@ function App() {
       <NavBar />
 
       <TracingBeam className="m-auto">
-        <main className="w-full sm:p-10">
+        <main className="w-full p-7">
           <Hero />
           <AboutMe />
           <Education />
